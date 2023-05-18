@@ -1,0 +1,32 @@
+/* generate css styles for the classes home__banner and home__bannerInfo */
+
+.home__banner {
+  background-image: url("https://images.unsplash.com/photo-1529873597343-8dd8429aa148?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 448px;
+  color: white;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  margin-bottom: 24px;
+}
+
+.home__bannerInfo {
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+/* style the button with class home__bannerButton in Header */
+
+.home__bannerButton {
+  color: white;
+  background-color: rgba(23, 26, 32, 0.8);
+  padding: 12px;
+  border-radius: 999px;
+  border-width: 0px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
