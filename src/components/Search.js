@@ -1,21 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Search.css";
 
 // suggestions is an array of objects
 // each object has a title and a link
 // handleSearch is a function that takes a string as an argument
 
-/* const suggestions = [
-    {
-        id: 1,
-        title: "React"
-    }
-] */
+const Search = ({
+  categories = [],
+  suggestions = [],
+  handleSearch,
+  handleSuggestionClick,
+}) => {
+  categories = [
+    { id: 1, name: "All" },
+    { id: 2, name: "Title" },
+    { id: 3, name: "Author Name is Biggiiie" },
+    { id: 4, name: "ISBN" },
+  ];
 
-const Search = ({ suggestions = [], handleSearch, handleSuggestionClick }) => {
+  const [selectedCategory, setSelectedCategory] = useState("");
+
+  const adjustWidth = (event) => {
+    const selectedOption =
+      event.target.options[event.target.selectedIndex].text;
+    let optionWidth = selectedOption.length * 7; // Adjust the multiplier as needed
+    if (optionWidth < 55) optionWidth = 55;
+    event.target.style.width = optionWidth + "px";
+    setSelectedCategory(selectedOption);
+  };
+
   return (
     <>
       <div className="search">
+        {/* search category dropdown */}
+        <select
+          className="search-category"
+          value={selectedCategory}
+          onChange={adjustWidth}
+        >
+          {categories.map((category) => (
+            <option key={category.id} value={category.name}>
+              {category.name}
+            </option>
+          ))}
+        </select>
         <input
           type="text"
           placeholder="Search..."

@@ -15,7 +15,7 @@ input {
   border: 1px solid #ccc;
   outline: none;
   background-color: transparent;
-  width: 80%;
+  width: 50%;
   height: 100%;
   font-size: 18px;
   color: #555;
@@ -51,7 +51,7 @@ input {
   z-index: 1;
 }
 
-.search-suggestion ul{
+.search-suggestion ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -65,4 +65,15 @@ input {
 
 .search-suggestion li:hover {
   background-color: #ccc;
+}
+
+/* search category dropdown style */
+.search-category {
+  height: 100%;
+  width: 40px;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 5px 0 0 5px ;
 }
