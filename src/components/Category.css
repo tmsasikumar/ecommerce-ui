@@ -1,0 +1,95 @@
+.category__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+    height: 500px !important;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
+    gap: 5px;
+}
+
+.category__link-item {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0 1rem;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    height: 500px;
+}
+
+.category__link-item:hover {
+    color: #f26a2e;
+}
+
+.category__link-item.active {
+    color: #f26a2e;
+}
+
+.category__link-item.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #f26a2e;
+    margin-top: 0.5rem;
+}
+
+.category__card {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url("https://media.istockphoto.com/id/1334140079/photo/male-runner-doing-fitness-workout-athlete-exercising-over-an-orange-background.jpg?s=612x612&w=is&k=20&c=D4BLJtroVsv630N7aP1Jgu1a_ffrji4REoxXTLYs0FY=");
+    object-fit: cover;
+    flex-basis: 28%;
+}
+
+.category__card:hover {
+    transform: scale(1.02);
+}
+
+.category__card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category__card-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.category__card-desc {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.category__card-btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #f26a2e;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.category__card-btn:hover {
+    background-color: #f26a2e;
+    transform: scale(1.05);
+}

@@ -2,17 +2,18 @@
 // create a banner with a background image and a button with proper styling
 // create a footer with proper styling
 
-import React, { Fragment } from "react";
-import Header from "./components/Header";
-// import "./Home.css";
+import React from "react";
+import Category from "./components/Category";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 const Home = () => {
     return (
-        <Fragment>
+        <div style={{overflowX: "hidden"}}>
             <Header />
+            <Category />
             <Footer />
-        </Fragment>
+        </div>
     );
 };
 
