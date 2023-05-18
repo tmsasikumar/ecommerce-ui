@@ -1,0 +1,68 @@
+/* classes for search bar */
+.search {
+  width: 60%;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  margin: auto;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+/* input field style */
+input {
+  border: 1px solid #ccc;
+  outline: none;
+  background-color: transparent;
+  width: 80%;
+  height: 100%;
+  font-size: 18px;
+  color: #555;
+  padding: 0 10px;
+}
+
+/* search icon style */
+.searchIcon {
+  color: #555;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* search icon button style */
+.searchIcon-button {
+  background-color: #FEBD69;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 100%;
+  width: 60px;
+  padding: auto;
+}
+
+/* search-suggestion dropdown style */
+.search-suggestion {
+  position: absolute;
+  top: 52px;
+  width: 49.2%;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.search-suggestion ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.search-suggestion li {
+  padding: 10px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.search-suggestion li:hover {
+  background-color: #ccc;
+}
