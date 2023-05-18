@@ -10,6 +10,9 @@
   padding-top: 48px;
   padding-bottom: 48px;
   margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
 }
 
 .home__bannerInfo {
@@ -22,11 +25,73 @@
 
 .home__bannerButton {
   color: white;
-  background-color: rgba(23, 26, 32, 0.8);
-  padding: 12px;
+  background-color: rgba(233, 114, 241, 0.8);
+  padding: 24px;
   border-radius: 999px;
   border-width: 0px;
   font-weight: 600;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.home__title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  background-color: rgba(97, 43, 190, 0.8);
+  width: 400px;
+  height: 60px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.home__message {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  background-color: rgba(97, 43, 190, 0.8);
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+.home__offers {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  background-color: rgba(97, 43, 190, 0.8);
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+.home__offer {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  background-color: rgba(97, 43, 190, 0.8);
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+.home__offersButton {
+  color: white;
+  background-color: rgba(233, 114, 241, 0.8);
+  padding: 24px;
+  border-radius: 999px;
+  border-width: 0px;
+  font-weight: 600;
+  font-size: 1.4rem;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
